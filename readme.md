@@ -20,7 +20,6 @@ Using SASS variable we can store:
 
 ## SASS Nested Rules and Properties
 
-// Nav Section Styles
 
 nav {
     background-color: cadetblue;
