@@ -88,7 +88,7 @@ p {
 
 ```
 
-### @mixins and @include
+## @mixins and @include
 Mixins allow you to define styles that can be re-used throughout your stylesheet. They make it easy to avoid using non-semantic classes like .float-left, and to distribute collections of styles in libraries.
 
 #### Create Mixin
