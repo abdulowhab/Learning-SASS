@@ -72,10 +72,21 @@ Example:
 #### Sass @use Modules
 The @use rule loads mixins, functions, and variables from other Sass stylesheets, and combines CSS from multiple stylesheets together. Stylesheets loaded by @use are called "modules". Sass also provides built-in modules full of useful functions.
 ```
-@use 'foundation/code' as code;
-@use 'foundation/lists';
+// Import Base variables
+@forward "./base/variables";
+// Use Primary Utility Variables
+@use "./utils/primary-variables" as variables;
 ```
+#### Use of @use module
+```
+h1 {
+    font-size: variables.$primary-heading;
+}
+p {
+    font-size: variables.$base_text;
+}
 
+```
 
 
 
