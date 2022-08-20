@@ -69,6 +69,12 @@ Example:
 @forward "colors";
 @forward "reset";
 ```
+#### Sass @use
+The @use rule loads mixins, functions, and variables from other Sass stylesheets, and combines CSS from multiple stylesheets together. Stylesheets loaded by @use are called "modules". Sass also provides built-in modules full of useful functions.
+```
+@use 'foundation/code' code;
+@use 'foundation/lists';
+```
 
 
 

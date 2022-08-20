@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #ffb7c3;
+  background-color: #BCF4DE;
 }
 
 h1 {
@@ -36,4 +36,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   background-color: black;
+}
+
+p {
+  font-size: 30px;
 }/*# sourceMappingURL=styles.css.map */
