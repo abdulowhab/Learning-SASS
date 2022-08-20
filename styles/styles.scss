@@ -1,7 +1,20 @@
 // Webpage Styles Reset
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+// Declaring primary variables
+$primary-color: #ffb7c3;
+$primary-heading: 48px;
+
+
+body {
+    background-color: $primary-color;
+}
+
+h1 {
+    font-size: $primary-heading;
 }
