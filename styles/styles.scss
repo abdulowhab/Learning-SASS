@@ -1,14 +1,9 @@
 // Webpage Styles Reset
+// Import base reset code
+@forward "./base/reset";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-// Declaring primary variables
-$primary-color: #ffb7c3;
-$primary-heading: 48px;
+// Import Base variables
+@forward "./base/variables";
 
 
 body {
