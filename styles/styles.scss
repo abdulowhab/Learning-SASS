@@ -9,6 +9,18 @@
 @use "./utils/primary-variables" as variables;
 
 
+// Mixins for Button
+@mixin primary-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 body {
     background-color: variables.$primary-color;
@@ -52,4 +64,16 @@ nav {
 
 p {
     font-size: variables.$base_text;
+}
+
+// Mixin to include
+.click {
+    @include primary-button();
+    background-color: violet;
+
+}
+
+.order {
+    @include primary-button();
+    background-color: chocolate;
 }

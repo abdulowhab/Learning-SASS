@@ -88,6 +88,38 @@ p {
 
 ```
 
+### @mixins and @include
+Mixins allow you to define styles that can be re-used throughout your stylesheet. They make it easy to avoid using non-semantic classes like .float-left, and to distribute collections of styles in libraries.
+
+#### Create Mixin
+```
+// Mixins for Button
+@mixin primary-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+```
+#### Use Mixin using @include
+```
+// Mixin to include
+.click {
+    @include primary-button();
+    background-color: violet;
+}
+
+.order {
+    @include primary-button();
+    background-color: chocolate;
+}
+```
+
+
 
 
 
