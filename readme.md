@@ -56,11 +56,21 @@ Sass has a mechanism for this: If you start the filename with an underscore, Sas
 
 So, a partial Sass file is named with a leading underscore:
 
-Sass Partial Syntax:
+#### Sass Partial Syntax:
 
-``` 
-     _filename.scss;
 ```
+_filename.scss;
+```
+#### Sass @forward
+You can import as many files as you need in the main file using @forward:
+Example: 
+```
+@import "variables";
+@import "colors";
+@import "reset";
+```
+
+
 
 
 
