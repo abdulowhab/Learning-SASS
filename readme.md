@@ -65,9 +65,9 @@ _filename.scss;
 You can import as many files as you need in the main file using @forward:
 Example: 
 ```
-@import "variables";
-@import "colors";
-@import "reset";
+@forward "variables";
+@forward "colors";
+@forward "reset";
 ```
 
 
