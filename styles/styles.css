@@ -10,4 +10,28 @@ body {
 
 h1 {
   font-size: 48px;
+}
+
+nav {
+  background-color: cadetblue;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  margin: 0 10px;
+  display: inline-block;
+  padding: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  transition: 0.4s;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 10px 15px;
+}
+nav a:hover {
+  background-color: black;
 }/*# sourceMappingURL=styles.css.map */
