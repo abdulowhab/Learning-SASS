@@ -77,3 +77,25 @@ p {
 .order {
     @include primary-button(chocolate);
 }
+
+// Extend
+.primary-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+}
+
+// Extend in another class
+.green-button {
+    @extend .primary-button;
+    background-color: green;
+}
+
+.red-button {
+    @extend .primary-button;
+    background-color: red;
+}

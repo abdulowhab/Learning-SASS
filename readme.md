@@ -146,6 +146,36 @@ Mixins allow you to define styles that can be re-used throughout your stylesheet
 }
 ```
 
+## Sass @extend Directive
+The @extend directive lets you share a set of CSS properties from one selector to another.
+
+The @extend directive is useful if you have almost identically styled elements that only differ in some small details.
+
+The following Sass example first creates a basic style for buttons (this style will be used for most buttons). Then, we create one style for a "Report" button and one style for a "Submit" button. Both "Report" and "Submit" button inherit all the CSS properties from the .button-basic class, through the @extend directive. In addition, they have their own colors defined:
+#### Extend and Inheritance Example
+```
+// Extend
+.primary-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+}
+// Extend in another class
+.green-button {
+    @extend .primary-button;
+    background-color: green;
+}
+.red-button {
+    @extend .primary-button;
+    background-color: red;
+}
+```
+
+
 
 
 

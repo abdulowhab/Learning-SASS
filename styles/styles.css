@@ -64,4 +64,22 @@ p {
   margin: 20px;
   font-size: 20px;
   font-weight: bold;
+}
+
+.primary-button, .red-button, .green-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  color: white;
+  border: 0;
+  border-radius: 20px;
+}
+
+.green-button {
+  background-color: green;
+}
+
+.red-button {
+  background-color: red;
 }/*# sourceMappingURL=styles.css.map */
