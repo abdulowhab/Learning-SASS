@@ -118,6 +118,35 @@ Mixins allow you to define styles that can be re-used throughout your stylesheet
     background-color: chocolate;
 }
 ```
+### Pass parameter and argument with mixin and include
+#### Mixin with parameter
+```
+// Mixins for Button
+@mixin primary-button($color) {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: $color;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+```
+#### @include with argument
+```
+
+// Mixin to include
+.click {
+    @include primary-button(violet);
+}
+.order {
+    @include primary-button(chocolate);
+}
+```
+
+
 
 
 

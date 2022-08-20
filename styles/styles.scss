@@ -10,12 +10,13 @@
 
 
 // Mixins for Button
-@mixin primary-button {
+@mixin primary-button($color) {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
     color: white;
     cursor: pointer;
+    background-color: $color;
     margin: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -64,16 +65,15 @@ nav {
 
 p {
     font-size: variables.$base_text;
+
 }
 
 // Mixin to include
 .click {
-    @include primary-button();
-    background-color: violet;
+    @include primary-button(violet);
 
 }
 
 .order {
-    @include primary-button();
-    background-color: chocolate;
+    @include primary-button(chocolate);
 }
