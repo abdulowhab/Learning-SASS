@@ -18,3 +18,36 @@ Using SASS variable we can store:
         background-color: $primary-color;
     }
 
+## SASS Nested Rules and Properties
+
+// Nav Section Styles
+
+nav {
+    background-color: cadetblue;
+
+    ul {
+        list-style: none;
+
+        li {
+            margin: 0 10px;
+            display: inline-block;
+            padding: 10px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 22px;
+                transition: 0.4s;
+                border-radius: 15px;
+                display: inline-block;
+                // background-color: black;
+                padding: 10px 15px;
+
+                &:hover {
+                    background-color: black;
+                }
+            }
+        }
+    }
+
+}
