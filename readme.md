@@ -177,7 +177,13 @@ The following Sass example first creates a basic style for buttons (this style w
 ## Conditional Control Statement
 Sass allows us to control the flow of our scripts through specific expressions that evaluate conditions. Based on the result of these conditions, Sass will execute certain sections of specified code.
 ```
-
+<!-- HTML -->
+<button class="success">Success</button>
+<button class="warning">Warning</button>
+<button class="danger">Danger</button>
+<button class="normal">Normal</button>
+```
+```
 // Working with Conditional Control Statement
 @mixin setButtonColor($color) {
     @if $color ==success {
@@ -199,6 +205,8 @@ Sass allows us to control the flow of our scripts through specific expressions t
     padding: 10px 20px;
     margin: 20px;
     border: none;
+    cursor: pointer;
+
 }
 .success {
     @include simpleButton;

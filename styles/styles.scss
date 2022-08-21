@@ -105,12 +105,15 @@ p {
     @if $color ==success {
         background-color: #3a86ff;
     }
+
     @else if $color ==warning {
         background-color: #bc6c25;
     }
+
     @else if $color ==danger {
         background-color: #e63946;
     }
+
     @else {
         background-color: #219ebc;
     }
@@ -122,19 +125,24 @@ p {
     padding: 10px 20px;
     margin: 20px;
     border: none;
+    cursor: pointer;
 }
+
 .success {
     @include simpleButton;
     @include setButtonColor(success)
 }
+
 .warning {
     @include simpleButton;
     @include setButtonColor(warning)
 }
+
 .danger {
     @include simpleButton;
     @include setButtonColor(danger)
 }
+
 .normal {
     @include simpleButton;
     @include setButtonColor(normal)
