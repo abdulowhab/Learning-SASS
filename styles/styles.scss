@@ -158,14 +158,9 @@ p {
     font-size: 20px;
     text-align: center;
     border: 2px solid slateblue;
+    display: inline-block;
 }
 
-// For Loop
-/* @for $i from 1 through 12 {
-    .col-#{$i} {
-        width: 100% / 12 * $i;
-    }
-} */
 
 // While Loop
 $i: 1;
@@ -174,9 +169,19 @@ $i: 1;
     .col-#{$i} {
         width: 100% / 12 * $i;
     }
+
     $i: $i + 1;
 }
 
 .row::after {
     clear: both;
+}
+
+// Working with @each loop
+$colors: green, red, yellow, blue;
+
+@each $color in $colors {
+    .#{$color}-heading {
+        color: $color;
+    }
 }

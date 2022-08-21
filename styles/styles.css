@@ -133,6 +133,7 @@ p {
   font-size: 20px;
   text-align: center;
   border: 2px solid slateblue;
+  display: inline-block;
 }
 
 .col-1 {
@@ -179,10 +180,22 @@ p {
   width: 91.6666666667%;
 }
 
-.col-12 {
-  width: 100%;
-}
-
 .row::after {
   clear: both;
+}
+
+.green-heading {
+  color: green;
+}
+
+.red-heading {
+  color: red;
+}
+
+.yellow-heading {
+  color: yellow;
+}
+
+.blue-heading {
+  color: blue;
 }/*# sourceMappingURL=styles.css.map */

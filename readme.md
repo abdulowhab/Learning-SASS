@@ -277,6 +277,23 @@ $i: 1;
     $i: $i + 1;
 }
 ```
+### Each Loop
+```
+<!-- HTML Codes -->
+<h1 class="green-heading">Green Heading</h1>
+<h1 class="red-heading">Red Heading</h1>
+<h1 class="yellow-heading">Yellow Heading</h1>
+<h1 class="blue-heading">Blue Heading</h1>
+```
+```
+<!-- SASS Codes -->
+$colors: green, red, yellow, blue;
+@each $color in $colors {
+    .#{$color}-heading {
+        color: $color;
+    }
+}
+```
 
 
 
