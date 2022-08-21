@@ -174,7 +174,49 @@ The following Sass example first creates a basic style for buttons (this style w
     background-color: red;
 }
 ```
+## Conditional Control Statement
+Sass allows us to control the flow of our scripts through specific expressions that evaluate conditions. Based on the result of these conditions, Sass will execute certain sections of specified code.
+```
 
+// Working with Conditional Control Statement
+@mixin setButtonColor($color) {
+    @if $color ==success {
+        background-color: #3a86ff;
+    }
+    @else if $color ==warning {
+        background-color: #bc6c25;
+    }
+    @else if $color ==danger {
+        background-color: #e63946;
+    }
+    @else {
+        background-color: #219ebc;
+    }
+}
+@mixin simpleButton {
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+}
+.success {
+    @include simpleButton;
+    @include setButtonColor(success)
+}
+.warning {
+    @include simpleButton;
+    @include setButtonColor(warning)
+}
+.danger {
+    @include simpleButton;
+    @include setButtonColor(danger)
+}
+.normal {
+    @include simpleButton;
+    @include setButtonColor(normal)
+}
+```
 
 
 

@@ -82,4 +82,40 @@ p {
 
 .red-button {
   background-color: red;
+}
+
+.success {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  background-color: #3a86ff;
+}
+
+.warning {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  background-color: #bc6c25;
+}
+
+.danger {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  background-color: #e63946;
+}
+
+.normal {
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px;
+  border: none;
+  background-color: #219ebc;
 }/*# sourceMappingURL=styles.css.map */
