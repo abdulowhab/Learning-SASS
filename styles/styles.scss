@@ -147,3 +147,23 @@ p {
     @include simpleButton;
     @include setButtonColor(normal)
 }
+
+// Working with Looping in SASS
+[class*="col-"] {
+    float: left;
+    background-color: red;
+    margin: 10px 0;
+    padding: 10px;
+    color: wheat;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid slateblue;
+}
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: 100% / 12 * $i;
+    }
+}
+.row::after {
+    clear: both;
+}

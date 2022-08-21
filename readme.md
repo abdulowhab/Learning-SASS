@@ -206,7 +206,6 @@ Sass allows us to control the flow of our scripts through specific expressions t
     margin: 20px;
     border: none;
     cursor: pointer;
-
 }
 .success {
     @include simpleButton;
@@ -223,6 +222,48 @@ Sass allows us to control the flow of our scripts through specific expressions t
 .normal {
     @include simpleButton;
     @include setButtonColor(normal)
+}
+```
+## Looping in SASS
+Sass has several loop options, much like other programming languages. They include the @for loop, @each loop and @while loop. These loops are an incredibly powerful tool for generating CSS code because you can defer code generation into an iterable task.
+### For Loop
+``` 
+<!-- HTML Code -->
+<div class="row">
+    <div class="col-1">Div-1</div>
+    <div class="col-2">Div-2</div>
+    <div class="col-3">Div-3</div>
+    <div class="col-4">Div-4</div>
+    <div class="col-5">Div-5</div>
+    <div class="col-6">Div-6</div>
+    <div class="col-7">Div-7</div>
+    <div class="col-8">Div-8</div>
+    <div class="col-9">Div-9</div>
+    <div class="col-10">Div-10</div>
+    <div class="col-11">Div-11</div>
+    <div class="col-12">Div-12</div>
+</div>       
+```
+```
+<!-- SASS Code    -->
+
+[class*="col-"] {
+    float: left;
+    background-color: red;
+    margin: 10px 0;
+    padding: 10px;
+    color: wheat;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid slateblue;
+}
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: 100% / 12 * $i;
+    }
+}
+.row::after {
+    clear: both;
 }
 ```
 
