@@ -266,6 +266,17 @@ Sass has several loop options, much like other programming languages. They inclu
     clear: both;
 }
 ```
+### While Loop 
+```
+<!-- While loop for same task in the above. -->
+$i: 1;
+@while $i < 12 {
+    .col-#{$i} {
+        width: 100% / 12 * $i;
+    }
+    $i: $i + 1;
+}
+```
 
 
 
